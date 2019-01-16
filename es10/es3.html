@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .d1 {
+            width: 200px;
+            height: 200px;
+            border-style: solid;
+            margin: 50px;
+            background-color: green;
+            color: white;
+            animation-duration: 4s;
+
+        }
+
+        .d1:hover {
+            animation-name: example;
+        }
+
+        @keyframes example {
+            0% {
+                background-color: red;
+            }
+
+            25% {
+                background-color: yellow;
+            }
+
+            50% {
+                background-color: green;
+            }
+
+            100% {
+                background-color: blue;
+            }
+        }
+
+
+
+        .d2 {
+            width: 200px;
+            height: 200px;
+            border-style: solid;
+            margin: 50px;
+            background-color: green;
+            color: white;
+
+            animation-duration: 4s;
+            animation-delay: 5s;
+            animation-timing-function: ease;
+        }
+
+        .d2:hover {
+            animation-name: alex;
+            animation-duration: 4s;
+            animation-delay: 5s;
+            animation-timing-function: ease;
+        }
+
+        @keyframes alex {
+            0% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                background-color: yellow;
+                left: 200px;
+                top: 0px;
+            }
+
+            50% {
+                background-color: green;
+                left: 200px;
+                top: 200px;
+            }
+
+            75% {
+                background-color: blue;
+                left: 0px;
+                top: 200px;
+            }
+
+            100% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+        }
+
+        .d3 {
+            width: 200px;
+            height: 200px;
+            border-style: solid;
+            margin: 50px;
+            background-color: green;
+            color: white;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+
+        }
+
+        .d3:hover {
+            animation-name: alex;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes alex {
+            from {
+                top: 0px;
+            }
+
+            to {
+                top: 200px;
+                background-color: blue;
+            }
+        }
+
+        .d4 {
+            width: 200px;
+            height: 200px;
+            border-style: solid;
+            margin: 50px;
+            background-color: green;
+            color: white;
+            animation-duration: 4s;
+            animation-delay: -2s;
+
+
+        }
+
+        .d4:hover {
+            animation-name: alex;
+        }
+
+        @keyframes alex {
+            0% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                background-color: yellow;
+                left: 200px;
+                top: 0px;
+            }
+
+            50% {
+                background-color: blue;
+                left: 200px;
+                top: 200px;
+            }
+
+            75% {
+                background-color: green;
+                left: 0px;
+                top: 200px;
+            }
+
+            100% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+        }
+
+        .d5 {
+            width: 200px;
+            height: 200px;
+            border-style: solid;
+            margin: 50px;
+            background-color: green;
+            color: white;
+
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+
+        }
+
+        .d5:hover {
+            animation-name: alex;
+        }
+
+        @keyframes alex {
+            0% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                background-color: yellow;
+                left: 200px;
+                top: 0px;
+            }
+
+            50% {
+                background-color: blue;
+                left: 200px;
+                top: 200px;
+            }
+
+            75% {
+                background-color: green;
+                left: 0px;
+                top: 200px;
+            }
+
+            100% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+        }
+
+        .d6 {
+            width: 200px;
+            height: 200px;
+            border-style: solid;
+            margin: 50px;
+            background-color: green;
+            color: white;
+
+            animation-duration: 4s;
+            animation-direction: reverse;
+
+        }
+
+        .d6:hover {
+            animation-name: alex;
+        }
+
+        @keyframes alex {
+            0% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                background-color: yellow;
+                left: 200px;
+                top: 0px;
+            }
+
+            50% {
+                background-color: blue;
+                left: 200px;
+                top: 200px;
+            }
+
+            75% {
+                background-color: green;
+                left: 0px;
+                top: 200px;
+            }
+
+            100% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+        }
+
+        .d7 {
+            width: 200px;
+            height: 200px;
+            border-style: solid;
+            margin: 50px;
+            background-color: green;
+            color: white;
+
+            animation-duration: 4s;
+            animation-iteration-count: 2;
+            animation-direction: alternate;
+
+        }
+
+        .d7:hover {
+            animation-name: alex;
+        }
+
+        @keyframes alex {
+            0% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                background-color: yellow;
+                left: 200px;
+                top: 0px;
+            }
+
+            50% {
+                background-color: blue;
+                left: 200px;
+                top: 200px;
+            }
+
+            75% {
+                background-color: green;
+                left: 0px;
+                top: 200px;
+            }
+
+            100% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+        }
+
+        .d8 {
+            width: 200px;
+            height: 200px;
+            border-style: solid;
+            margin: 50px;
+            background-color: green;
+            color: white;
+            transition: width 2s, height 4s;
+
+        }
+
+        .d8:hover {
+            width: 300px;
+            height: 300px;
+        }
+
+        .d9 {
+            width: 200px;
+            height: 200px;
+            border-style: solid;
+            margin: 50px;
+            background-color: green;
+            color: white;
+
+            animation-duration: 4s;
+            animation-iteration-count: 2;
+            animation-direction: alternate-reverse;
+
+
+        }
+
+        .d9:hover {
+            animation-name: alex;
+        }
+
+        @keyframes alex {
+            0% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                background-color: yellow;
+                left: 200px;
+                top: 0px;
+            }
+
+            50% {
+                background-color: blue;
+                left: 200px;
+                top: 200px;
+            }
+
+            75% {
+                background-color: green;
+                left: 0px;
+                top: 200px;
+            }
+
+            100% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+        }
+
+        .d10 {
+            width: 200px;
+            height: 200px;
+            border-style: solid;
+            margin: 50px;
+            background-color: green;
+            color: white;
+            transition: width 2s, height 4s;
+
+        }
+
+        .d10:hover {
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <article class="d1">
+        <p>1° box</p>
+    </article>
+    <article class="d2">
+        <p>2° box</p>
+    </article>
+    <article class="d3">
+        <p>3° box</p>
+    </article>
+    <article class="d4">
+        <p>4° box</p>
+    </article>
+    <article class="d5">
+        <p>5° box</p>
+    </article>
+    <article class="d6">
+        <p>6° box</p>
+    </article>
+    <article class="d7">
+        <p>7° box</p>
+    </article>
+    <article class="d8">
+        <p>8° box</p>
+    </article>
+    <article class="d9">
+        <p>9° box</p>
+    </article>
+    <article class="d10">
+        <p>10° box</p>
+    </article>
+</body>
+
+</html>
